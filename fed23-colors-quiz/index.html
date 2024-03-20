@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <section id="numberofquestions">
+    <form id="ten-twenty-all">
+      <h3>Choose your game</h3>
+      <input id="ten" type="radio" name="questions" value="10" checked />
+      <label for="ten">10 colors</label>
+      <input id="twenty" type="radio" name="questions" value="20" />
+      <label for="twenty">20 colors</label>
+      <input id="all" type="radio" name="questions" value="all" />
+      <label for="all">All colors</label>
+      <button id="startQuizButton" type="button">Start Quiz!</button>
+    </form>
+  </section>
+
+  <section id="container">
+    <h1>Quiz - Guess Who</h1>
+    <div id="image-container"></div>
+    <div id="allButtons"></div>
+    <p id="rightorwrong"></p>
+    <button id="nextQ">Next</button>
+    <button id="newgame">New Game</button>
+  </section>
+
+  <section class="aside">
+    <h2>Your results</h2>
+    <p id="guesses">Your total guesses</p>
+    <p id="manyright">Your score</p>
+  </section>
+
+  <script src="students/students.js"></script>
+  <script src="index.js"></script>
+
+
+</body>
+</html>
